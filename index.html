@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedi | Front-End Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold gradient-text">Fedi.dev</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Ana Səhifə</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Layihələr</a>
+                    <a href="#about" class="hover:text-blue-600 transition">Haqqımda</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Əlaqə</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Müasir Veb Təcrübələri <br> <span class="gradient-text">Yaradırıq</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
+                Mən Fedi, Front-End Developerəm. React və müasir texnologiyalarla sürətli, estetik və istifadəçi dostu veb-saytlar hazırlayıram.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-slate-900 text-white font-semibold rounded-xl hover:bg-slate-800 transition shadow-lg shadow-slate-200">
+                    İşlərimə bax
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-white text-slate-900 font-semibold rounded-xl border border-slate-200 hover:border-blue-400 transition">
+                    Mənimlə danış
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features/Skills -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">React Ekosistemi</h3>
+                    <p class="text-slate-600">Next.js, Redux və müasir hook-larla performanslı tətbiqlər.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">UI/UX Dizayn</h3>
+                    <p class="text-slate-600">Tailwind CSS və Framer Motion ilə cəlbedici interfeyslər.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Optimallaşdırma</h3>
+                    <p class="text-slate-600">Sürətli yüklənmə və SEO üçün ən yaxşı təcrübələrin tətbiqi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500">© 2026 Fedi. Bütün hüquqlar qorunur. OpenClaw tərəfindən yaradılıb. ⚡️</p>
+        </div>
+    </footer>
+
+</body>
+</html>
